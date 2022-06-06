@@ -1,0 +1,30 @@
+:root {
+    --primary: #8257E6;
+
+    --background: #121214;
+
+    --main-title: #FFFFFF;
+    --sub-title: #FFFFFF;
+    --text-1: #FFFFFF;
+    --text-2: #000000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background: var(--background);
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button, a {
+    cursor: pointer;
+}
