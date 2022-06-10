@@ -1,6 +1,44 @@
+import { useRef } from 'react';
 import styles from './styles.module.css';
 
+
+const ANSWERS = [
+    "Certeza!",
+    "Não tenho tanta certeza.",
+    "É decididamente assim.",
+    "Não conte com isso.",
+    "Sem dúvidas!",
+    "Pergunte novamente mais tarde.",
+    "Sim, definitivamente!",
+    "Minha resposta é não.",
+    "Você pode contar com isso.",
+    "Melhor não te dizer agora.",
+    "A meu ver, sim.",
+    "Minhas fontes dizem não.",
+    "Provavelmente.",
+    "Não é possível prever agora.",
+    "Perspectiva boa.",
+    "As perspectivas não são tão boas.",
+    "Sim.",
+    "Concentre-se e pergunte novamente.",
+    "Sinais apontam que sim.",
+]
+
 export function PageContent() {
+    const answer = useRef<HTMLParagraphElement>(null!);
+
+
+    function handleMakeQuestion() {
+        // Gerar numero aleatório
+        const totalAnswers = ANSWERS.length;
+        const randomNumber = Math.floor(Math.random() * totalAnswers);
+
+        const newAnswer = ANSWERS[randomNumber];
+
+        answer.current.innerHTML = newAnswer;
+    }
+
+
     return (
         <div className={styles.container}>
             <img 
@@ -17,9 +55,19 @@ export function PageContent() {
                 placeholder='Digite sua pergunta'
                 className={styles.input}
             />
-            <button className={styles.button}>
+            <button 
+                className={styles.button}
+                onClick={handleMakeQuestion}
+            >
                 Fazer Pergunta
             </button>
+
+            <h3 className={styles.answer}>
+                <div>Pergunta que fiz</div>
+                <p ref={answer}>
+
+                </p>
+            </h3>
         </div>
     );
 }
