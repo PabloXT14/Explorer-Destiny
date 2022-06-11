@@ -63,8 +63,8 @@
 }
 
 .answer {
-    margin-top: 1.875rem;
     text-align: center;
+    transition: opacity 1s linear;
 }
 
 .answer div {
