@@ -14,7 +14,7 @@
 
 ---
 
-Explorer Destiny é um projeto que tem como finalidade ler o seu destino, atrevés de perguntas que você realizar, espero que você esteja com sorte.
+Explorer Destiny é um projeto que tem como finalidade ler o seu destino, através de perguntas que você realizar, espero que você esteja com sorte.
 
 * Caso goste do projeto marque a estrelinha⭐ e compartilhe para me ajudar 👍, e me siga para ver outros projetos meus.
 
@@ -53,9 +53,9 @@ Este projeto foi desenvolvido durante a Maratona Explorer da [Rocketseat](https:
 
 ## 📋 Clipboard (Pré-requisitos)
 Antes de baixar o projeto você vai precisar ter instalado na sua máquina as seguintes ferramentas:
-    * [Git](https://git-scm.com)
-    * [NodeJS](https://nodejs.org/en/)
-    * [Yarn](https://yarnpkg.com/) ou [NPM](https://www.npmjs.com/)
+* [Git](https://git-scm.com)
+* [NodeJS](https://nodejs.org/en/)
+* [Yarn](https://yarnpkg.com/) ou [NPM](https://www.npmjs.com/)
 
 
 ## ⚙ Settings
