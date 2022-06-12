@@ -1,7 +1,6 @@
 import { useRef } from 'react';
 import styles from './styles.module.css';
 
-import androidImg from '../../assets/android-gif.gif';
 import { toast } from 'react-toastify';
 
 const ANSWERS = [
